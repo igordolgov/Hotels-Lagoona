@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('MullerRegular'), url('fonts/MullerRegular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muller', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color : #f1f1f1;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.header_logo {
+    margin-right: 25px;
+}
+
+.header_tel {
+    margin-right: auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: #666;
+}
+
+.header_personal-account {
+    padding-left: 20px;
+    color: #cc9933;
+    font-weight: 500;
+    background-image: url('img/arrow.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-size: 40px;
+    color: #333;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.nav {
+    margin-bottom: 12px;
+}
+
+.nav_list {
+    height: 70px;
+}
+
+.nav_list,
+.booking_list,
+.services_item,
+.advantages_item {
+    background-color: #fff;
+}
+
+.nav_list_item:not(:last-child) {
+   margin-right: 47px;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 11px 21px;
+    margin-bottom: 26px;
+    border-radius: 12px;
+    color: #333;
+}
+
+.nav_search {
+    margin-left: 75px;
+    width: 355px;
+    height: 45px;
+    border-width: 1px;
+    border-radius: 15px;
+    color: #999;
+}
+
+.booking {
+    align-self: flex-start;
+    margin-right: 55px;
+    width: 518px;
+}
+
+.booking_list {
+    margin-bottom: 24px;
+    padding: 27px 320px 27px 21px; 
+    color: #999;
+    border-width: 1px;
+    border-color: #999;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Muller', Arial, Helvetica, sans-serif;
+}
+
+.booking_room-search {
+    margin-right: 30px;
+    padding: 27px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #cc9933;
+    border-radius: 12px;
+    border-width: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.booking_avail {
+    color: #999;
+}
+
+.booking_color {
+    font-weight: bold;
+    color: #cc9933;
+}
+
+.offer {
+    align-self: flex-start;
+    position: relative;
+    width: 795px;
+}
+
+.offer_img {
+    position: absolute;
+    width: 595px;
+    height: 540px;
+    object-fit: cover;
+    left: 0;
+    top: 95px;
+    background-image: url('img/lux-room.jpg');
+    background-repeat: no-repeat;
+    background-color: #666;
+    border-radius: 12px;
+}
+
+.offer_title {
+    margin-left: 44px;
+    /* margin-bottom: 10px; */
+    font-size: 40px;
+}
+
+.offer_img_caption {
+    width: 330px;
+    margin-top: 266px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    font-size: 66px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #fff;
+}
+
+.offer_price {
+    width: 230px;
+    margin-left: 44px;
+    margin-right: 30px;
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.offer_detailed {
+    width: 330px;
+    color: #ffcc66;
+    padding-right: 20px;
+    background-image: url('img/arrow2.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.about-us {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.about-us_description {
+    /* margin-top: -20px; */
+    margin-left: 44px;
+    width: 880px;
+}
+
+.services_list,
+.advantages_list,
+.acmdation_list {
+    display: flex;
+}
+
+.services_item {
+    width: 572px;
+    height: 325px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.services_title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #cc9933;
+}
+
+.services_description,
+.services_title {
+    padding-left: 45px;
+}
+
+.services_item_left {
+    margin-right: 24px;
+}
+
+.services_img {
+    border-radius: 12px 12px 0 0;
+    width: 572px;
+}
+
+.services_arrow {
+    padding-right: 20px;
+    background-image: url('img/arrow4.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+.advantages {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.advantages_list {
+    flex-wrap: wrap;
+}
+
+.advantages_item {
+    margin-right: 23px;
+    margin-bottom: 24px;
+    padding: 0 44px;
+    width: 275px;
+    height: 275px;
+    border-radius: 12px;
+}
+
+.advantages_item_pic {
+    display: inline-block;
+    margin-top: 44px;
+    width: 60px;
+    height: 59px;
+}
+
+.pic1 {
+    background-image: url('img/bathtub.svg');
+}
+
+.pic2 {
+    background-image: url('img/hanger.svg');
+}
+
+.pic3 {
+    background-image: url('img/heating.svg');
+}
+
+.pic4 {
+    background-image: url('img/hotel-key.svg');
+}
+
+.pic5 {
+    background-image: url('img/parking.svg');
+}
+
+.pic6 {
+    background-image: url('img/reception.svg');
+}
+
+.pic7 {
+    background-image: url('img/security-box.svg');
+}
+
+.pic8 {
+    background-image: url('img/swimming-pool.svg');
+}
+
+.advantages_item:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.advantages_item_pic {
+    padding-top: 44px;
+    background-position: top center;
+    background-size: cover ;
+}
+
+.acmdation_list {
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+.acmdation p {
+    padding-left: 44px;
+}
+
+.hotel {
+    overflow: hidden;
+    margin-right: 24px;
+    margin-bottom: 25px;
+    height: 441px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.hotel_place {
+    margin-bottom: 20px;
+    color: #969696;
+}
+
+.hotel_price {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.price_bold {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+
+.hotel_rooms {
+    display: inline-block;
+    padding: 14px 21px 12px 21px;
+    margin-left: 44px;
+    border: 1px solid #cc9933;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #cc9933;
+}
+
+.hotel_right {
+    margin-right: 0;
+}
+
+.all-variants {
+    width: 373px;
+    height: 441px;
+    background-color: #666;
+    background-image: url('img/all-variant.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.look-options {
+    display: inline-block;
+    padding: 368px 30px 52px 39px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.all-variants_arrow {
+    padding-right: 25px;
+    background-image: url('img/arrow3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.stars {
+    padding-left: 35px;
+    font-size: 20px;
+    color: #e9ce93;
+}
